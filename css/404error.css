@@ -1,0 +1,30 @@
+.header_bgColor {
+  background-color: #444;
+  padding: 0 40px;
+}
+
+.header_bgColor .header_logo a {
+  color: #ccc;
+}
+
+.header_bgColor .am-nav li a {
+  color: #ccc;
+}
+
+.header_bgColor .am-nav li a:hover {
+  color: #0e90d2;
+  background-color: #0e91d200;
+}
+
+.header_bgColor .header_logo {
+  margin-right: 10px;
+}
+
+.header_bgColor .header_search {
+  width: 100px;
+}
+
+.admin-main {
+  padding-top: 0px;
+}
+/*# sourceMappingURL=404error.css.map */

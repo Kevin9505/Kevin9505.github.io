@@ -1,3 +1,29 @@
+.header_bgColor {
+  background-color: #444;
+  padding: 0 40px;
+}
+
+.header_bgColor .header_logo a {
+  color: #ccc;
+}
+
+.header_bgColor .am-nav li a {
+  color: #ccc;
+}
+
+.header_bgColor .am-nav li a:hover {
+  color: #0e90d2;
+  background-color: #0e91d200;
+}
+
+.header_bgColor .header_logo {
+  margin-right: 10px;
+}
+
+.header_bgColor .header_search {
+  width: 100px;
+}
+
 .am-container {
   max-width: 1200px;
 }
@@ -115,5 +141,15 @@
 .show .am-gallery li {
   background-color: #fff;
   padding: 0px;
+}
+
+footer {
+  position: relative;
+}
+
+footer .am-gotop {
+  position: absolute;
+  bottom: 10px;
+  right: 90px;
 }
 /*# sourceMappingURL=article.css.map */

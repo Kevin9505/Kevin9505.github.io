@@ -1,3 +1,40 @@
+// 头部导航栏
+.header_bgColor {
+  background-color: #444;
+  padding: 0 40px;
+
+  .header_logo {
+    a {
+      color: #ccc;
+    }
+
+  }
+
+  .am-nav {
+    li {
+      a {
+        color: #ccc;
+
+        &:hover {
+          color: #0e90d2;
+          background-color: #0e91d200;
+        }
+      }
+    }
+  }
+
+
+
+  .header_logo {
+    margin-right: 10px;
+  }
+
+  .header_search {
+    width: 100px;
+  }
+
+}
+
 // 中间内容部分
 .am-container {
   max-width: 1200px;
@@ -147,5 +184,19 @@
       background-color: #fff;
       padding: 0px;
     }
+  }
+}
+
+// 页脚部分
+footer {
+  // position: fixed;
+  // bottom: 0;
+  // left: 0px;
+  position: relative;
+
+  .am-gotop {
+    position: absolute;
+    bottom: 10px;
+    right: 90px;
   }
 }

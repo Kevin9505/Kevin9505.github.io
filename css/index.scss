@@ -1,17 +1,28 @@
-
-
 // 头部导航栏
 .header_bgColor {
 	background-color: #444;
 	padding: 0 40px;
 
-	a {
-		color: #ccc;
+	.header_logo {
+		a {
+			color: #ccc;
+		}
 
-		&:hover {
-			color: #0e90d2;
+	}
+
+	.am-nav {
+		li {
+			a {
+				color: #ccc;
+
+				&:hover {
+					color: #0e90d2;
+					background-color: #0e91d200;
+				}
+			}
 		}
 	}
+
 
 
 	.header_logo {

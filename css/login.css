@@ -1,0 +1,24 @@
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 200%;
+  color: #333;
+  margin-top: 30px;
+}
+
+.header p {
+  font-size: 14px;
+}
+
+footer {
+  position: relative;
+}
+
+footer .am-gotop {
+  position: absolute;
+  bottom: 10px;
+  right: 90px;
+}
+/*# sourceMappingURL=login.css.map */

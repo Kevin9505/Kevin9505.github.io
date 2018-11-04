@@ -1,0 +1,40 @@
+// 头部导航栏
+.header_bgColor {
+  background-color: #444;
+  padding: 0 40px;
+
+  .header_logo {
+    a {
+      color: #ccc;
+    }
+
+  }
+
+  .am-nav {
+    li {
+      a {
+        color: #ccc;
+
+        &:hover {
+          color: #0e90d2;
+          background-color: #0e91d200;
+        }
+      }
+    }
+  }
+
+
+
+  .header_logo {
+    margin-right: 10px;
+  }
+
+  .header_search {
+    width: 100px;
+  }
+
+}
+
+.admin-main {
+  padding-top: 0px;
+}
