@@ -1,0 +1,119 @@
+.am-container {
+  max-width: 1200px;
+}
+
+.am-container .main {
+  margin-bottom: 30px;
+}
+
+.am-container .main .aside_left {
+  padding: 0;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+}
+
+.am-container .main .aside_left .aside_left_top {
+  padding: 1rem;
+}
+
+.am-container .main .aside_left .aside_left_top .am-panel {
+  margin-bottom: 0;
+}
+
+.am-container .main .aside_left .aside_left_top .am-panel .am-panel-bd {
+  padding: 0px;
+}
+
+.am-container .main .aside_left .aside_left_top .am-panel .am-panel-bd .am-breadcrumb {
+  margin-bottom: 0;
+}
+
+.am-container .main .aside_left .aside_left_bottom {
+  padding: 1rem;
+}
+
+.am-container .main .aside_left .aside_left_bottom .left_bottom_comment .am-comment {
+  margin-bottom: 1rem;
+}
+
+.am-container .main .aside_left .aside_left_bottom .send_comment {
+  margin-top: 30px;
+  padding-top: 10px;
+  margin: 0px;
+}
+
+.am-container .main .aside_left .aside_left_bottom .send_comment .send_comment_edit {
+  padding: 0px;
+  padding-left: 62px;
+}
+
+.am-container .main .aside_left .aside_left_bottom .send_comment .send_comment_edit #container {
+  width: 100%;
+  height: 200px;
+}
+
+.am-container .main .aside_left .aside_left_bottom .send_comment .send_comment_btn {
+  padding: 0px;
+  position: relative;
+}
+
+.am-container .main .aside_left .aside_left_bottom .send_comment .send_comment_btn .am-btn {
+  position: absolute;
+  bottom: 0px;
+  left: .5rem;
+}
+
+.am-container .main .aside_left .am-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.am-container .main .aside_right {
+  background-color: #e1e1e1;
+  padding: 0;
+  padding-left: 10px;
+}
+
+.am-container .main .aside_right .aside_right_content {
+  padding-top: .5rem;
+  padding-bottom: .1rem;
+  background-color: #fff;
+}
+
+.am-container .main .aside_right .aside_right_content .am-accordion {
+  margin: 0 .5rem;
+}
+
+.am-container .main .aside_right .aside_right_content .am-accordion .am-accordion-item {
+  margin-top: 0px;
+}
+
+.show {
+  width: 1200px;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.show .am-gallery {
+  padding: 0px;
+  margin-bottom: 1rem;
+}
+
+.show .am-gallery li {
+  background-color: #fff;
+  padding: 0px;
+}
+/*# sourceMappingURL=article.css.map */
