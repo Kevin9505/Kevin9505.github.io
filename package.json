@@ -1,0 +1,25 @@
+{
+  "name": "mui",
+  "version": "1.0.0",
+  "description": "blog",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kevin9505/blog.git"
+  },
+  "author": "likaifeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kevin9505/blog/issues"
+  },
+  "homepage": "https://github.com/Kevin9505/blog#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
