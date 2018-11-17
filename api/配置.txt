@@ -1,0 +1,1 @@
+express框架,配合moment(时间格式化)中间件+cors中间件(跨域用)+body-parser(解析表单)+mysql中间件
