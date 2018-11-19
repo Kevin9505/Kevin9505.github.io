@@ -1,3 +1,24 @@
+@charset "UTF-8";
+/* 我是公共样式 */
+/*
+* @Author: likaifeng
+* @Date:   2018-11-04 16:42:07
+* @Last Modified by:   likaifeng
+* @Last Modified time: 2018-11-19 14:12:11
+*/
+.header_bgColor .right .unvisibile {
+  display: none;
+}
+
+.header_bgColor .right .logining {
+  line-height: 50px;
+  color: #ccc;
+}
+
+.header_bgColor .right .logining .logout {
+  color: #0e90d2;
+}
+
 .header_bgColor {
   background-color: #444;
   padding: 0 40px;

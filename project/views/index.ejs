@@ -13,12 +13,12 @@
   <link rel="stylesheet" href="/lib/mui/css/amazeui.min.css">
   <link rel="stylesheet" href="/lib/mui/css/app.css">
   <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.css">
-  <link rel="stylesheet" href="/static/css/base.css">
+  <!-- <link rel="stylesheet" href="/static/css/base.css"> -->
   <link rel="stylesheet" href="/static/css/index.css">
 
 <body>
   <!-- 头部导航栏 -->
-  <!-- <header class="am-topbar header_bgColor">
+  <header class="am-topbar header_bgColor">
     <h1 class="am-topbar-brand header_logo">
       <a href="javascript:;">大叔的博客</a>
     </h1>
@@ -31,22 +31,17 @@
         <li><a href="javascript:;">我的github</a></li>
         <li><a href="javascript:;">我的码云</a></li>
       </ul>
-      <div class="am-topbar-right">
-        <div class="am-dropdown" data-am-dropdown="{boundary: '.am-topbar'}">
-          <span class="am-btn am-btn-secondary am-topbar-btn am-btn-sm am-dropdown-toggle" data-am-dropdown-toggle>其他
-            <span class="am-icon-caret-down"></span></span>
-          <ul class="am-dropdown-content">
-            <li><a href="#">注册</a></li>
-            <li><a href="#">随便看看</a></li>
-          </ul>
+      <div class="right">
+        <div class="am-topbar-right">
+          <div class="am-dropdown unvisibile" data-am-dropdown="{boundary: '.am-topbar'}">
+            <a href="/register" class="am-btn am-btn-primary am-topbar-btn am-btn-sm">注册</a>
+            <a href="/login" class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</a>
+          </div>
+          <span class="logining"></span>
         </div>
       </div>
-      <div class="am-topbar-right">
-        <a href="/login" class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</a>
-      </div>
     </div>
-  </header> -->
-  <% include header %>
+  </header>
   <!-- 版心 -->
   <div class="am-container">
     <div class="am-g main">
@@ -65,7 +60,7 @@
             <div class="am-list-news-bd">
               <ul class="am-list">
                 <!--缩略图在标题左边-->
-                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+                <!-- <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
                   <div class="am-u-sm-1 am-list-thumb">
                     <a href="/article" class="">
                       <img src="/static/images/avatar.jpg" alt="" />
@@ -75,40 +70,8 @@
                     <h3 class="am-list-item-hd"><a href="/article" class="">我很囧，你保重....晒晒旅行中的那些囧！</a></h3>
                     <div class="am-list-item-text">囧人囧事囧照，人在囧途，越囧越萌。标记《带你出发，陪我回家》http://book.douban.com/subject/25711202/为“想读”“在读”或“读过”，有机会获得此书本活动进行3个月，每月送出三本书。会有不定期bonus！</div>
                   </div>
-                </li>
-                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
-                  <div class="am-u-sm-1 am-list-thumb">
-                    <a href="javascript:;" class="">
-                      <img src="/static/images/avatar_1.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div class=" am-u-sm-11 am-list-main">
-                    <h3 class="am-list-item-hd"><a href="javascript:;" class="">我很囧，你保重....晒晒旅行中的那些囧！</a></h3>
-                    <div class="am-list-item-text">囧人囧事囧照，人在囧途，越囧越萌。标记《带你出发，陪我回家》http://book.douban.com/subject/25711202/为“想读”“在读”或“读过”，有机会获得此书本活动进行3个月，每月送出三本书。会有不定期bonus！</div>
-                  </div>
-                </li>
-                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
-                  <div class="am-u-sm-1 am-list-thumb">
-                    <a href="javascript:;" class="">
-                      <img src="/static/images/avatar_1.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div class=" am-u-sm-11 am-list-main">
-                    <h3 class="am-list-item-hd"><a href="javascript:;" class="">我很囧，你保重....晒晒旅行中的那些囧！</a></h3>
-                    <div class="am-list-item-text">囧人囧事囧照，人在囧途，越囧越萌。标记《带你出发，陪我回家》http://book.douban.com/subject/25711202/为“想读”“在读”或“读过”，有机会获得此书本活动进行3个月，每月送出三本书。会有不定期bonus！</div>
-                  </div>
-                </li>
-                <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
-                  <div class="am-u-sm-1 am-list-thumb">
-                    <a href="javascript:;" class="">
-                      <img src="/static/images/avatar_1.jpg" alt="" />
-                    </a>
-                  </div>
-                  <div class=" am-u-sm-11 am-list-main">
-                    <h3 class="am-list-item-hd"><a href="javascript:;" class="">我很囧，你保重....晒晒旅行中的那些囧！</a></h3>
-                    <div class="am-list-item-text">囧人囧事囧照，人在囧途，越囧越萌。标记《带你出发，陪我回家》http://book.douban.com/subject/25711202/为“想读”“在读”或“读过”，有机会获得此书本活动进行3个月，每月送出三本书。会有不定期bonus！</div>
-                  </div>
-                </li>
+                </li> -->
+                
               </ul>
             </div>
           </div>
@@ -226,19 +189,50 @@
 <script src="assets/js/amazeui.ie8polyfill.min.js"></script>
 <![endif]-->
 <script src="/lib/mui/js/amazeui.js"></script>
-
+<script src="/lib/arttemplate/template-web.js"></script>
+<script src="/static/js/unit.js"></script>
+  
 </html>
+<script type="text/template" id="postsInitTpl">
+  {{each data val key}}
+    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+      <div class="am-u-sm-1 am-list-thumb">
+        <a href="/article/?pid={{val.id}}" class="">
+          <img src="{{val.avator}}" alt="" />
+        </a>
+      </div>
+      <div class=" am-u-sm-11 am-list-main">
+        <h3 class="am-list-item-hd"><a href="/article" class="">{{val.title}}</a></h3>
+        <div class="am-list-item-text">{{val.content}}</div>
+      </div>
+    </li>
+  {{/each}}
+</script>
 <script>
-  // var data = {
-  //   "lang": context.__lang, // 默认，无需改动。若改动赋值为“en”则为英文，否则为中文！
-  //   "owner": "aaa", // 网站名字 可以填写公司名称或者其他内容。
-  //   "companyInfo": [{ // 网站信息
-  //       "detail": "" // 必要时可加 a 标签跳转到某个页面，网站的详细信息，在页面中的footer部分就可以看到这里的文字
-  //     },
-  //     {
-  //       "detail": "" // 必要时可加 a 标签跳转到某个页面，网站的详细信息，在页面中的footer部分就可以看到这里的文字
-  //     }
-  //   ]
-  // };
-  // return data;
+  init()
+  
+  // 管理函数
+  function init(){
+    isLogin('userInfo')
+    findAllpost()
+  }
+  function findAllpost(){
+    $.ajax({
+      url:'http://127.0.0.1:3000/api/findAllpost',
+      type:'get',
+      data:{
+        page:1
+      },
+      dataType:'json',
+      success:function(res){
+        console.log(res)
+        if(res.err_code == 200){
+          var htmlstr = template('postsInitTpl',{
+            data:res.message
+          })
+          $('.am-list').html(htmlstr)
+        }
+      }
+    })
+  }
 </script>

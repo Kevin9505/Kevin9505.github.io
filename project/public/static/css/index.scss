@@ -1,3 +1,6 @@
+/* 我是公共样式 */
+@import '_base.scss';
+
 // 头部导航栏
 .header_bgColor {
 	background-color: #444;
@@ -32,6 +35,7 @@
 	.header_search {
 		width: 100px;
 	}
+
 
 }
 

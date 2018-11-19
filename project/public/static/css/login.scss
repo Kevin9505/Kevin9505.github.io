@@ -12,6 +12,17 @@
   font-size: 14px;
 }
 
+/* 中间部分 */
+.gender {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+
+  label {
+    flex: 1;
+  }
+}
 
 // 页脚部分
 footer {

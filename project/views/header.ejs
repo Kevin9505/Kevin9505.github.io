@@ -11,12 +11,17 @@
       <li><a href="javascript:;">我的github</a></li>
       <li><a href="javascript:;">我的码云</a></li>
     </ul>
+    <% if(sessionStorage.getItem('userInfo')){ %>
+    <div class="am-topbar-right">
+      你好
+    </div>
+    <% }else{ %>
     <div class="am-topbar-right">
       <div class="am-dropdown" data-am-dropdown="{boundary: '.am-topbar'}">
         <span class="am-btn am-btn-secondary am-topbar-btn am-btn-sm am-dropdown-toggle" data-am-dropdown-toggle>其他
           <span class="am-icon-caret-down"></span></span>
         <ul class="am-dropdown-content">
-          <li><a href="#">注册</a></li>
+          <li><a href="/register">注册</a></li>
           <li><a href="#">随便看看</a></li>
         </ul>
       </div>
@@ -24,5 +29,6 @@
     <div class="am-topbar-right">
       <a href="/login" class="am-btn am-btn-primary am-topbar-btn am-btn-sm">登录</a>
     </div>
+    <% } %>
   </div>
 </header>

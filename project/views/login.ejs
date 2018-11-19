@@ -11,6 +11,7 @@
   <meta http-equiv="Cache-Control" content="no-siteapp" />
   <!-- <link rel="alternate icon" type="image/png" href="assets/i/favicon.png"> -->
   <link rel="stylesheet" href="/lib/mui/css/amazeui.css" />
+  <link rel="stylesheet" href="/lib/layui-src/src/css/layui.css">
   <link rel="stylesheet" href="/static/css/login.css">
 </head>
 
@@ -38,7 +39,7 @@
 
       <form method="post" action="login" class="am-form">
         <label for="email">邮箱:</label>
-        <input type="email" name="" id="email" value="">
+        <input type="email" name="" id="email" value="1980942486@qq.com">
         <br>
         <label for="password">密码:</label>
         <input type="password" name="" id="password" value="">
@@ -84,28 +85,58 @@
   </footer>
 </body>
 <script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/layui-src/src/layui.js"></script>
+<script src="/static/js/unit.js"></script>
 <script>
   $(function () {
     $('.loginBtn').on('click', function () {
-      var email = $('#email').val();
-      var password = $('#password').val();
-      if (email == '' && email.trim() == '') {
-        console.log('邮箱不能为空')
-        return;
+      var email = $('#email').val()
+      var password = $('#password').val()
+      if (!checkEmail(email)) {
+        layui.use('layer', function () {
+          var layer = layui.layer
+          layer.msg('邮箱格式不正确')
+        })
+        return
       }
-      if (password == '' && password.trim() == '') {
-        console.log('密码不能为空')
-        return;
+      if (password.trim() == '') {
+        layui.use('layer', function () {
+          var layer = layui.layer
+          layer.msg('密码不能为空')
+        })
+        return
       }
       $.ajax({
-        url: 'http://127.0.0.1:3000/api/getlist',
-        type: 'get',
+        url: 'http://127.0.0.1:3000/api/login',
+        type: 'post',
         dataType: 'json',
+        data:{
+          email:email,
+          password:password
+        },
         success: function (res) {
-          console.log(res)
-          // if(){
-
-          // }
+          // console.log(res)
+          // 数据回来,判断是否与数据库一致
+          if(res.err_code==200){
+            if(res.message.length ==0 ){
+              // 提示用户是否登录成功
+              layui.use('layer', function () {
+                var layer = layui.layer
+                layer.msg('用户名或密码错误...')
+              })
+            }else if(res.message[0].email==email&&res.message[0].password==password){
+              // 提示用户是否登录成功
+              layui.use('layer', function () {
+                var layer = layui.layer
+                layer.msg('登录成功...')
+              })
+              sessionStorage.setItem('userInfo',JSON.stringify(res.message))
+              // 跳转页面
+              setTimeout(function(){
+                location.href = '/'
+              },1000)
+            }
+          }
         }
       })
     })
