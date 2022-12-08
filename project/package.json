@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/Kevin9505/blog#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.20.1",
     "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "layui-src": "^2.4.5",
     "mysql": "^2.16.0"
   },
